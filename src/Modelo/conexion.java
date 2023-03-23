@@ -1,7 +1,12 @@
-
 package Modelo;
 
-public class Connection {
+import javax.swing.JOptionPane;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+
+public class conexion {
    private static Connection conn = null;
    private static String login = "superheroe";
    private static String clave = "superheroe";
@@ -30,4 +35,5 @@ public class Connection {
        } catch (SQLException e) {
            System.out.println("Error en el cierre de la conexion" + e.getMessage());
        } 
+}
 }
